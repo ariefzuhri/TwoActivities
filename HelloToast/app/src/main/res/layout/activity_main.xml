@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="@dimen/layout_padding">
+
+    <Button
+        android:id="@+id/btn_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/toast"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_1"
+        android:textStyle="bold"
+        android:onClick="showToast"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/font_2"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/yellow"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/zero"
+        android:layout_below="@+id/btn_toast"
+        android:layout_above="@id/btn_count"/>
+
+    <Button
+        android:id="@+id/btn_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_1"
+        android:text="@string/count"
+        android:onClick="countUp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
